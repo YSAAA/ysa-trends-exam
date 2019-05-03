@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="../css/style.css">
+
+<div class="page">
+    <h1>{{user.name}} - Todos</h1>
+      {{#each todo}}
+        <div class="todos" data-aos="flip-left" data-aos-duration="1000">
+          <h5 class="title">#{{this.id}} {{this.title}}</h3>
+            <br>
+            {{#if this.completed}}
+              <p><i class="fas fa-check" id="green"></i> Completed</p>
+            {{else}}
+              <p><i class="fas fa-times" id="red"></i> Incomplete</p>
+            {{/if}}
+          </div>
+      {{/each}}
+</div>

@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="../css/style.css">
+
+<div class="page">
+    <h1>Blog Posts</h1>
+    {{#each posts}}
+    <div class="card post-card" data-aos="zoom-in-up">
+        <h3 class="title">{{this.title}}</h3>
+        <hr>
+        <p>{{this.body}}</p>
+        <a href="/posts/{{this.id}}"><small>See post &nbsp;<i class="fas fa-arrow-right"></i></small></a>
+    </div>
+    {{/each}}
+</div>

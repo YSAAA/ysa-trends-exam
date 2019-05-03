@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="../../css/style.css">
+<div class="page">
+    <h1>Album {{album_by.id}} of {{album_owner.name}} </h1>
+            {{#each albumphotos}}
+                <div class="photo-grid" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="{{this.url}}" target="_blank">
+                        <img src="{{this.thumbnailUrl}}" alt="">
+                    </a>
+                    <p> <i class="fas fa-camera-retro"></i> Photo {{this.id}}: {{this.title}}: </p>
+                    
+                {{!-- <a href="{{this.url}}" target="_blank"><small>See photo</i></small></a> --}}
+                </div>
+            {{/each}}
+</div>

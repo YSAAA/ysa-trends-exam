@@ -1,0 +1,19 @@
+<div class="page">
+    <h1>Albums</h1>
+    {{#each albums}}
+        <div class="card user-card"  data-aos="zoom-in-up">
+            <div class="overlay">
+                <div class="text"><a href="albums/{{this.id}}/photos"> See photos </a></div>
+            </div>
+                <i class="fas fa-camera-retro"></i>
+                <h4 class="title">{{this.title}}<br></h4>
+                <p>album {{this.id}}</p>
+        </div>
+    {{/each}}
+</div>
+
+
+    
+
+
+    

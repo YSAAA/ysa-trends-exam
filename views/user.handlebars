@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="../css/style.css">
+
+<div class="page">
+    <h1>{{user_info.name}} - Profile</h1>
+    <div id="user-info" data-aos="zoom-in-up" data-aos-duration="1500">
+        <img src="https://images.unsplash.com/photo-1492681290082-e932832941e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80">
+            <div class="infos">
+                <p><b>{{user_info.name}} <i class="fas fa-check-circle"></i></b></p> 
+                <p>Email: {{user_info.email}}<br>
+                Phone: {{user_info.phone}}<br>
+                Address: {{user_info.address.suite}} {{user_info.address.street}},<br> {{user_info.address.city}}, {{user_info.address.zipcode}}<br>
+                Geolocation: {{user_info.address.geo.lat}}, {{user_info.address.geo.lng}}</p>
+                <br>
+                <p>from<b> {{user_info.company.name}}</b><br>
+                <i>"{{user_info.company.catchPhrase}}"</i><br>{{user_info.company.bs}}</p>
+            </div> 
+            <div class="button-group">
+                <a href="/posts?userId={{user_info.id}}"><small><i class="fas fa-eye"></i> Posts &nbsp;</small></a>
+                <a href="/albums?userId={{user_info.id}}"><small><i class="fas fa-eye"></i> Albums &nbsp;</small></a>
+                <a href="/todos?userId={{user_info.id}}"><small><i class="fas fa-eye"></i> Todos &nbsp;</small></a>
+            </div>
+    </div>
+</div>
+
+    
+
+        

@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="../css/style.css">
+
+<div class="page">
+    <h1>Post {{post.id}} by {{post_owner.name}}</h1>
+    <div class="card post-card" data-aos="zoom-in-up" data-aos-duration="1000">
+        <h3 class="title">{{post.title}}</h3>
+        <hr>
+        <p>{{post.body}}</p>
+        <p>By: {{post_owner.name}}</p>
+        <a href="/posts/{{post.id}}/comments"><small><i class="fas fa-comment-alt"></i> View Comments </small></a><br>
+    </div>
+</div>

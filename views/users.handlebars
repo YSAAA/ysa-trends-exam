@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../css/style.css">
+
+<div class="page">
+    <h1>Users</h1>
+    {{#each users}}
+    <div class="card user-card" data-aos="zoom-in-up" data-aos-duration="1500">
+        <div class="overlay">
+            <div class="text"><a href="/users/{{this.id}}"> View More Info </a></div>
+        </div>
+        <h4 class="title"> {{this.name}}</h4>
+        <ul>
+            <li>@{{this.username}}</li>
+            <hr>
+            <li>of <b>{{this.company.name}}</b></li>
+        </ul>
+    </div>
+    {{/each}}
+</div>
+

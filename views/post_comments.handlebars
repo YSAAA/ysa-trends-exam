@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="../css/style.css">
+
+<div class="page">
+    <h1>Post {{posts_bod.id}} - Comments</h1>
+         <div class="card post-card" data-aos="zoom-in-up" data-aos-duration="1000">
+         <h3 class="title">{{posts_bod.title}}</h3>
+         <hr>
+            <p>{{posts_bod.body}}</p>
+            <br>
+         <hr>
+            {{#each post_comments}}
+            <div class="comments" data-aos="fade-down" data-aos-duration="1000">
+                <p><b><i class="fas fa-user"></i> {{this.name}}</b> {{this.email}} </p>
+                <p>{{this.body}}</p>
+            </div>
+            {{/each}}
+        </div>
+</div>
+

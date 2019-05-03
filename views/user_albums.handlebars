@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="../css/style.css">
+<div class="page">
+    <h1>{{owner.name}} - Albums</h1>
+    {{#each al}}
+    <div class="card user-card"  data-aos="zoom-in-up">
+      <div class="overlay">
+        <div class="text"><a href="albums/{{this.id}}/photos"> See photos </a></div>
+      </div>
+                <i class="fas fa-camera-retro"></i>
+                <h4 class="title">{{this.title}}<br></h4>
+                <p>album {{this.id}}</p>
+    </div>
+    {{/each}}
+</div>

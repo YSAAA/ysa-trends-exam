@@ -1,0 +1,22 @@
+{
+  "name": "trends_exam_ysa",
+  "version": "1.0.0",
+  "description": "Technical Exam for Soft Dev position",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "Domingo, Ysabelle Louise O.",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "handlebars": "^4.1.2",
+    "node-fetch": "^2.4.1"
+  }
+}
